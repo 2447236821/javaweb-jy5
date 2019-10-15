@@ -9,7 +9,7 @@ public class Users {
     private String psd;
     private Integer tel;
     private Integer type=0;
-    private Integer stats=0;
+
 
 
     public Integer getId() {
@@ -50,5 +50,17 @@ public class Users {
 
     public void setType(Integer type) {
         this.type = type;
+
     }
+    @Override
+    public String toString() {
+        return "Users{" +
+                "id=" + id +
+                ", uname='" + uname + '\'' +
+                ", psd='" + psd + '\'' +
+                ", tel=" + tel +
+                ", type=" + type +
+                '}';
+    }
+
 }
